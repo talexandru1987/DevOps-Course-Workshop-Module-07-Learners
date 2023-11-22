@@ -10,3 +10,9 @@ jobs:
 
       - name: Hello world # Name of step
         run: echo 'Hello world' # Command to run
+
+      - name: Build the C# code
+        run: dotnet build
+
+      - name: Run the tests
+        run: dotnet test
