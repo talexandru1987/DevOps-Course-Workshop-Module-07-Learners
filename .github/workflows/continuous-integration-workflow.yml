@@ -16,3 +16,18 @@ jobs:
 
       - name: Run the tests
         run: dotnet test
+
+      - name: Navifate to DotnetTemplate.Web folder
+        run: cd DotnetTemplate.Web
+
+      - name: Install Typescript dependencies
+        run: npm install
+
+      - name: Rund the build
+        run: npm run build
+
+      - name: Rund TypeScript linter
+        run: npm run lint
+
+      - name: Rund TypeScript tests
+        run: npm t
