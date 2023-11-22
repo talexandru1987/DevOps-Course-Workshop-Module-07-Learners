@@ -20,6 +20,9 @@ jobs:
       - name: Navifate to DotnetTemplate.Web folder
         run: cd DotnetTemplate.Web
 
+      - name: Print working directory
+        run: pwd
+
       - name: Install Typescript dependencies
         run: npm install
 
