@@ -28,7 +28,7 @@ jobs:
     name: Build and test
     runs-on: ubuntu-latest      # Sets the build environment a machine with the latest Ubuntu installed
     steps:
-    - uses: actions/checkout@v2 # Adds a step to checkout the repository code
+    - uses: actions/checkout@v4 # Adds a step to checkout the repository code
 ```
 3. Commit and push your changes to a branch on your repository.
 4. On your repository page, navigate to the Actions tab.
@@ -49,7 +49,7 @@ jobs:
     name: Build and test
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
 
     - name: Hello world       # Name of step
@@ -65,7 +65,7 @@ jobs:
     name: Build and test
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     - name: Hello world
       uses: actions/hello-world-javascript-action@v1.1 # Name of the action. This uses https://github.com/actions/hello-world-javascript-action
